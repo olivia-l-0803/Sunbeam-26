@@ -12,14 +12,34 @@
     --Orange-Color: #fcae7b;
     --Peach-Color: #FFDE96;
     --Coral-Color: #FA855A;
+    --Teal-Color: #578088;
+    --Light-Blue-Color: #eaf3ff;
 }
 
 body {
     background-color: var(--Background-Color);
+    min-height: 100vh;
     overflow-x: hidden;
+    position: relative;
 }
 
 html {
     width: 100%;
     overflow: hidden;
+}
+
+/* nav bar */
+.nav-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 40px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 0px;
+    background-color: transparent;
 }
