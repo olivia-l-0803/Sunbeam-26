@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Background-Color: #76afc8;
+    --Yellow-Color: #fffd9a; 
+    --Blue-Text-Color: #213270;
+    --Outline-Color: #faa9e6;
+    --Orange-Color: #fcae7b;
+    --Purple-Color: #c9a0dc;
+}
+
+html {
+    width: 100%;
+    overflow: hid
+}
