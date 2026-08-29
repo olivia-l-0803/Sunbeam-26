@@ -9,7 +9,7 @@ def homePage(request, userID):
     template = loader.get_template('homepage.html')
     return HttpResponse(template.render(context= data))
 
-def JournalPage(request):
-    data = {"x": "x"}
-    template = loader.get_template('homepage.html')
+def forum(request, userID):
+    data = {"ID": userID}
+    template = loader.get_template('forum.html')
     return HttpResponse(template.render(context= data))
