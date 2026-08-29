@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!--Comfortaa(main font)-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forums</title>
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+</head>
+<body>
+    <div class="main-container">
+        {% include 'znav.html' %}
+        <div class="content-wrapper">
+        <!-- Form Wrapper -->
+        <div class="form-container">
+            <form id="reviewForm"> 
+              
+              <!-- Book Name-->
+              <div>
+                <label for="name">Name:</label>
+              </div>
+
+              <!-- Paragraph Review -->
+              <div>
+                <label for="reviewText">Review Paragraph</label>
+                <textarea id="reviewText" placeholder="Write your review below" required></textarea>
+              </div>
+              
+              <!-- Submission Button -->
+              <button type="submit">
+                <span class="button-text">Submit Review</span>
+              </button>
+
+              <!-- Error/Success Messages -->
+              <div id="statusMsg"></div>
+            </form>
+        </div>
+
+        <!-- New Live Reviews Display Section -->
+        <div id="reviewsDisplayContainer">
+            <h2>All Student Reviews</h2>
+            <div id="reviewsList">Loading reviews...</div>
+        </div>
+    </div><!-- Safely closes content-wrapper -->
+</div> <!-- Safely closes main-container -->

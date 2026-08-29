@@ -2,11 +2,11 @@
 <html lang="en">
 {% load static %}
 
-<!--Comfortaa(main font)-->
+<!--fonts-->
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bungee&family=Comfortaa:wght@300..700&family=Mouse+Memoirs&family=Spicy+Rice&display=swap" rel="stylesheet">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +22,13 @@
 {% include 'nav.html' %}
 
 <!-- text main -->
-<div main-container>
-    <h1>Welcome to [website name]!</h1>
-    <h3>One place to organize your life and collaborate with others.</h3>
+<div class="main-container">
+    <div class="welcome-group">
+        <span class="left-accent"></span>
+        <h1>Welcome to </h1>
+        <h2>[website name]!</h2>
+    </div>
+    <h3 class="welcome-little-text">Design your dream life, document the journey, and build it together.</h3>
+</div>
 </body>
+</html>

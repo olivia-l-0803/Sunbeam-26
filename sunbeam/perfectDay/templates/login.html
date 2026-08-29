@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<!--Comfortaa(main font)-->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log In</title>
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+
+<body>
+    <div class="main-container">
+        
+        <!-- Background -->
+        <img id = "bg" class="bglayer" src="{% static 'images/Image1.jpg' %}">
+
+        <!-- Login -->
+        <div class="login-card">
+                
+            <h1 class="login-heading">Login</h1>
+            <!--WARNING WARNING WARNING-->
+            {% if messages %}
+                <div class="error-container" style = "color: red; background-color: #ffcccc; padding: 15px; padding-bottom: 0; padding-top: 0; margin-bottom: 15px; border-radius: 4px;">
+                    {% for message in messages %}
+                        <p>{{ message }}</p>
+                    {% endfor %}
+                </div>
+            {% endif %}
+            
+            <!-- everythign clickable + working -->
+            <form id = "formLog" method="POST">
+                {% csrf_token %}
+                <div class="input-group">
+                    <label>Username</label>
+                    <input type="text" class="text-input" name = "usernamefield" required> <!-- EMAIL FIELD EMAIL FIELD EMAIL-->
+                </div>
+                <!-- password  -->
+                <div class="input-group">
+                    <label>Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="password-input" class="text-input" name = "passwordfield" required>
+                        
+                    </div>
+                </div>
+                
+                <!-- nter  button -->
+                <button type="submit" class="secondary-button" id = "EnterClass">
+                    <div class="btn-border"></div>
+                    <span class="btn-text">Log In</span>
+                </button>
+
+            </form>
+        
+        </div>
+
+    </div>
+</body>
