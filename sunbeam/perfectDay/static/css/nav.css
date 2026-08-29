@@ -35,10 +35,8 @@
     border-radius: 50px;
 
     font-family: 'Spicy Rice', sans-serif;
-    font-weight: auto;
     color: #fffd9a; /*RACHEL DO THE COLORS*/
     text-decoration: none;
-    
     font-weight: normal;
    
     display: inline-flex;
@@ -49,7 +47,6 @@
     display: flex;
     list-style: none;
     gap: 35px;
-    gap: 32px;
     font-family: "Spicy Rice", sans-serif !important;
     color: var(--Yellow-Color);
 }
