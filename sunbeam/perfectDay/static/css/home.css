@@ -48,14 +48,14 @@ html {
     display: flex;
     list-style: none;
     gap: 24px;
+    color: var(--Blue-Text-Color); /*RACHEL DO THE COLORS*/
 }
 
 .nav-links a {
     text-decoration: none;
-    color: var(--Yellow-Color);
 }
 
 .nav-links a:hover {
-    color: var(--Coral-Color);
+    color: var(--Coral-Color); /*RACHEL DO THE COLORS*/
     transition: 0.3s ease-in-out;
 }
