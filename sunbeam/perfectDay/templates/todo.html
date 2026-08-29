@@ -22,6 +22,10 @@
   </div>
   
   <div class="main-container">
-    
+    {% for task in tasks%}
+      <div class="taskBox" id ="{{task.id}}">
+        {{task.text}}
+      </div>
+    {% endfor %}
   </div>
 </body>

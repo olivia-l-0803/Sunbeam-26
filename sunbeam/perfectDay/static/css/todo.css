@@ -13,7 +13,7 @@
     --Peach-Color: #FFDE96;
     --Coral-Color: #FA855A;
     --Teal-Color: rgb(12, 0, 99);
-    --Light-Blue-Color: #eaf3ff;
+    --Light-Blue-Color: #d4dfee;
     --White: #ffffff;
 }
 
@@ -31,7 +31,7 @@ h1 {
     color: white;
     font-family: "Bungee", sans-serif;
     font-weight: 200;
-    font-size: 70px;
+    font-size:55px;
     font-style: normal;
     margin: 0;
     line-height: 1.1;
@@ -57,7 +57,37 @@ h3 {
 /* main */
 
 .heading {
-    margin-left: 5%;
+    margin-left: 16%;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
+}
+
+.main-container {
+  position: relative;
+  width: 700px;
+  height: auto;
+  background: white;
+  border-radius: 60px;
+  padding: 40px;
+  margin: auto;
+  margin-top: 25px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+}
+
+.taskBox {
+  position: relative;
+  width: 500px;
+  height: auto;
+  background: var(--Light-Blue-Color);
+  border-radius: 60px;
+  padding: 5%;
+  margin: auto;
+  margin-top: 2%;
+  display: flex;
+  flex-direction: row;
 }
