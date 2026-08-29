@@ -21,12 +21,31 @@
     <h3>Plan your perfect day. </h3>
   </div>
   
-  <div class="main-container">
+  <div class="main-container" id= "todo-container">
     {% for task in tasks %}
       {% if not task.done %}
       <div class="taskBox">
-        <button type= "submit" class = doneToggle id ="{{task.id}}" name ="taskMarked" value ="{{task.id}}" > </button>
-        <p>{{task.text}}</p>
+        <form  method="POST" style="display: flex; flex-direction: row;">
+          {% csrf_token %}
+          <button type= "submit" class = doneToggle id ="{{task.id}}" name ="taskMarked" value ="{{task.id}}" > </button>
+          <p>{{task.text}}</p>
+        </form>
+      </div>
+      {% endif %}
+    {% empty %} 
+      <p>Nothing here yet!</p>
+    {% endfor %}
+  </div>
+  <h3 style="margin-left: 16%; margin-top: 30px;">You've completed so much today!</h3>
+  <div class="main-container" id= "todo-container">
+    {% for task in tasks %}
+      {% if task.done %}
+      <div class="untaskBox">
+        <form  method="POST" style="display: flex; flex-direction: row;">
+          {% csrf_token %}
+          <button type= "submit" class = unToggle id ="{{task.id}}" name ="unsubmit" value ="{{task.id}}" > </button>
+          <p>{{task.text}}</p>
+        </form>
       </div>
       {% endif %}
     {% empty %} 

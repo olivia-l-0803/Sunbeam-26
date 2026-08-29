@@ -21,7 +21,7 @@ body {
     background-color: rgb(171, 206, 247);
     /*min-height: 100vh;*/
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: auto;
     position: relative;
 
 }
@@ -51,7 +51,6 @@ h3 {
     font-optical-sizing: auto;
     font-weight: 200;
     font-size: 30px;
-    font-style: italic;
 }
 p {
     color: var(--Blue-Text-Color);
@@ -110,6 +109,34 @@ p {
 
 .doneToggle {
     border-color: var(--Blue-Text-Color);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+
+    margin-right: 30px
+}
+
+
+.untaskBox {
+    position: relative;
+    width: 550px;
+    height: 40px;
+    background: #969ba1;
+    border-radius: 20px;
+    padding: 5%;
+    margin: auto;
+    margin-top: 2%;
+
+    align-items: center;
+    justify-items: center;
+
+    display: flex;
+    flex-direction: row;
+}
+
+.unToggle {
+    border-color: var(--Blue-Text-Color);
+    background-color: #484d5e ;
     border-radius: 100%;
     width: 25px;
     height: 25px;

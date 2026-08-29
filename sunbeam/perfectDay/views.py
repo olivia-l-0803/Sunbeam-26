@@ -50,14 +50,21 @@ def forum(request, userID):
 def todo(request, userID):
     allTodo= todotask.objects.filter(authorid = userID)
     if request.method == "POST":
-        taskID = request.POST.get("taskMarked")
-        task = todotask.objects.get(id= taskID)
-        print(task)
+        if "taskMarked" in request.POST :
+            taskID = request.POST.get("taskMarked")
+            task = todotask.objects.get(id= taskID)
+            task.done = True
+            task.save()
+        elif "unsubmit" in request.POST :
+            taskID = request.POST.get("unsubmit")
+            task = todotask.objects.get(id= taskID)
+            task.done = False
+            task.save()
         
     data = {"ID": userID,
             "tasks": allTodo }
     template = loader.get_template('todo.html')
-    return HttpResponse(template.render(context= data))
+    return HttpResponse(template.render(request= request,context= data))
 
 def journal(request, userID):
     data = {"ID": userID}
