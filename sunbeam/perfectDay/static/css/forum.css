@@ -33,7 +33,7 @@ html {
 
 /* main text */
 h1 {
-    color: #ffb482;
+    color: #a3704e;
     font-family: "Bungee", sans-serif;
     font-weight: 200;
     font-size: 70px;
@@ -42,7 +42,7 @@ h1 {
     line-height: 1.1;
 }
 h2 {
-    color: var(--Light-Blue-Color);
+    color: #a3704e;
     font-family: "Bungee", sans-serif;
     font-weight: 200;
     font-size: 70px;
@@ -107,6 +107,12 @@ h4 {
     justify-content: center;
     align-items: center;
     width: 100%;
+
+    color: #a3704e;
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 1000;
+    font-size: 20px;
+    font-style: bold;
 }
 
 .content-wrapper1 {
@@ -128,6 +134,17 @@ h4 {
     background-color: var(--Light-Blue-Color);
     border-radius: 14px; /* Makes the inner container round (slightly smaller radius) */
     box-sizing: border-box;
+    font-family: "Comfortaa", sans-serif;
+}
+
+#answerForm div {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px; /* Adds clean spacing between the sections */
+}
+
+#answerForm label {
+  margin-bottom: 5px;  /* Adds a tiny gap between the text and the box */
 }
 
 .DisplayContainer1 h1 {
@@ -141,40 +158,41 @@ h4 {
 }
 
 /*load answers*/
-.main-container1 {
+.main-container3 {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
 
-.content-wrapper1 {
+.content-wrapper3 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
     padding: 12px;
     margin-bottom: 24px;
-    background-color: var(--Teal-Color);
+    background-color: #a3704e;
     border-radius: 24px; /* Makes the outer container round */
     box-sizing: border-box;
 }
 
-.DisplayContainer1 {
+.DisplayContainer3 {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 16px 24px;
-    background-color: var(--Light-Blue-Color);
+    background-color: var(--Peach-Color);
     border-radius: 14px; /* Makes the inner container round (slightly smaller radius) */
     box-sizing: border-box;
 }
 
-.DisplayContainer1 h1 {
-    color: var(--Teal-Color);
+.DisplayContainer3 h1 {
+    color: #ffffff;
     font-family: "Bungee", sans-serif;
     font-weight: 200;
     font-size: 24px;
     font-style: normal;
     margin: 0;
     line-height: 1.1;
+    text-align: center;
 }

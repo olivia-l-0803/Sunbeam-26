@@ -11,7 +11,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forums</title>
-    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+    <link rel="stylesheet" href="{% static 'css/journal.css' %}">
 </head>
 <body>
   {% include 'nav.html' %}
@@ -19,4 +19,10 @@
     <!-- nav-->
     
   </div>
+<div class="journal-container">
+  <h2 class="section-title">Write An Entry</h2>
+  <form onsubmit="return false;">
+    <input type="text" class="journal-input" placeholder="Title your day...">
+    
+
 </body>

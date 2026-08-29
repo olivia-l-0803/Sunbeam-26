@@ -149,14 +149,19 @@ h3 {
 .icon {
     width: 550px;
     height: auto;
-    margin-bottom: 700px;
+    margin-bottom: 900px;
 }
 
-h4 {
+.h4 {
     color: var(--Coral-Color);
     font-family: "Comfortaa", sans-serif;
     font-weight: 1000;
     font-size: 40px;
     font-style: bold;
+    text-decoration: underline;
 }
 
+.h4:hover {
+    color: var(--Blue-Text-Color);
+    cursor: pointer;
+}

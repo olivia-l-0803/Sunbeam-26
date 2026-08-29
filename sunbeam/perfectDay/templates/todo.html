@@ -22,11 +22,15 @@
   </div>
   
   <div class="main-container">
-    {% for task in tasks%}
-      <div class="taskBox" id ="{{task.id}}" data-id="{{task.id}}">
-        <input type="checkbox" class = doneToggle id ="{{task.id}}" >
-        <p>{{task.text}}</p>
+    {% for task in tasks %}
+      {% if not task.done %}
+      <div class="taskBox">
+        <button class = doneToggle id ="{{task.id}}" onclick="markedDone(this)" data-id="{{task.id}}"> </button>
+        <p>{{task.text}}</p><p>{{task.id}}</p>
       </div>
+      {% endif %}
+    {% empty %} 
+      <p>Nothing here yet!</p>
     {% endfor %}
   </div>
 

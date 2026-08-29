@@ -107,3 +107,12 @@ p {
     display: flex;
     flex-direction: row;
 }
+
+.doneToggle {
+    border-color: var(--Blue-Text-Color);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+
+    margin-right: 30px
+}
