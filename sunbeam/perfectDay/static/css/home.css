@@ -19,8 +19,10 @@
 body {
     background-color: var(--Background-Color);
     min-height: 100vh;
-    /*overflow-x: hidden;*/
+    overflow-x: hidden;
+    overflow-y: auto;
     position: relative;
+
 }
 
 html {
