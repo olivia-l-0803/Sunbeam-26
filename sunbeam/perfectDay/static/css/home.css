@@ -19,7 +19,7 @@
 
 body {
     background-color: rgb(171, 206, 247);
-    min-height: 100vh;
+    /*min-height: 100vh;*/
     overflow-x: hidden;
     overflow-y: hidden;
     position: relative;

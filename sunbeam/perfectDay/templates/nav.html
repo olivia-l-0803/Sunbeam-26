@@ -8,10 +8,10 @@
 <div class="nav-container">
     <nav class="navbar">
         <ul class="nav-links">
-            <li><a href="{% url 'homePage' 1 %}">Home</a></li>
-            <li><a href="#">To-Do List</a></li>
-            <li><a href="#">Journal</a></li>
-            <li><a href="{% url 'forum' 1 %}">Forum</a></li>
+            <li><a href="{% url 'homePage' ID %}">Home</a></li>
+            <li><a href="{% url 'todo' ID %}">To-Do List</a></li>
+            <li><a href="{% url 'journal' ID %}">Journal</a></li>
+            <li><a href="{% url 'forum' ID %}">Forum</a></li>
         </ul>
     </nav>
 </div>

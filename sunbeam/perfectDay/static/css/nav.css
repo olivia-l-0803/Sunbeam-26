@@ -2,7 +2,7 @@
     --Background-Color: #76afc8;
     --Yellow-Color: #fffd9a; 
     --Blue-Text-Color: #213270;
-    --Nav-Color: #ff9864;
+    --Nav-Color: #ff9c6b;
     --Orange-Color: #fcae7b;
     --Peach-Color: #FFDE96;
     --Coral-Color: #FA855A;
@@ -17,25 +17,30 @@
     max-width: 1100px;
     margin: 0 auto;
     padding: 0 40px;
+    display: flex;
+    justify-content: center;
 }
 
 .navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 30px 0px;
-    background-color: transparent;
+    padding: 12px 32px;
+
+    background-color: var(--Nav-Color);
+    border-radius: 50px;
+
     font-family: 'Spicy Rice', sans-serif;
-    font-weight: auto;
-    color: #fffd9a; /*RACHEL DO THE COLORS*/
-    text-decoration: none;
-    
+    font-weight: normal;
+   
+    display: inline-flex;
+    margin: 20px auto;
 }
 
 .nav-links {
     display: flex;
     list-style: none;
-    gap: 35px;
+    gap: 32px;
     font-family: "Sipcy Rice", sans-serif;
     color: var(--Yellow-Color);
 }

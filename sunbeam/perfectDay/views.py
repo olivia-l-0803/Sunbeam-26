@@ -43,3 +43,13 @@ def forum(request, userID):
     data = {"ID": userID}
     template = loader.get_template('forum.html')
     return HttpResponse(template.render(context= data))
+
+def todo(request, userID):
+    data = {"ID": userID}
+    template = loader.get_template('todo.html')
+    return HttpResponse(template.render(context= data))
+
+def journal(request, userID):
+    data = {"ID": userID}
+    template = loader.get_template('journal.html')
+    return HttpResponse(template.render(context= data))
