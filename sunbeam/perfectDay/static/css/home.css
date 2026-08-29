@@ -52,7 +52,7 @@ html {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--Light-Blue-Color);
+    color: var(--Yellow-Color);
 }
 
 .nav-links a:hover {
