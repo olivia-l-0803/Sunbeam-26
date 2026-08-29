@@ -54,9 +54,10 @@
       <p>Nothing here yet!</p>
     {% endfor %}
   </div>
-
+ 
   <div class="addModal">
     <div class="modalContent">
+      <button type="button" class="close-btn">&times;</button>
       <p style=" color: var(--Blue-Text-Color); font-family: 'Mouse Memoirs', sans-serif; font-weight: 200; font-size: 70px;">
       Add a task</p>
 
@@ -64,12 +65,14 @@
         {% csrf_token %}
         <div class="inputGroup">
           <label>Name of task</label>
-          <input class= textInput name= textInput type="text">
+          <input class= textInput name= "textInput" type="text" required>
         </div>
         <div class="inputGroup">
           <label>Due Date</label>
-          <input class= "dateInput" name="dateInput" type="date">
+          <input class= "dateInput" name="dateInput" type="date" required>
         </div>
+
+        <button type="submit" class = "submitAdd" name = "submitAdd">Save</button>
 
       </form>
     </div>

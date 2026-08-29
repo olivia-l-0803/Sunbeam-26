@@ -61,6 +61,24 @@ p {
     font-weight: 1000;
     font-size: 20px;
 }
+
+.close-btn {
+  position: absolute;
+  top: 110px;              
+  right: 400px;            
+  background: none;
+  border: none;
+  color: #ff4d4d;        
+  font-size: 32px;        
+  font-weight: bold;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0;
+  transition: transform 0.1s ease, color 0.1s ease;
+}
+
+
+
 /* main */
 
 .heading {
@@ -72,8 +90,8 @@ p {
 
 .addBtn{
     position:absolute;
-    top: 25%;
-    right: 20%;
+    top: 110px;
+    right: 200px;
 
     width: 130px;
     height: 70px;
@@ -241,4 +259,23 @@ label{
     padding: 5px;
     font-size: 15px;
     font-family: 'Comfortaa', sans-serif;
+}
+.submitAdd{
+  width: 100%;
+  width: 100px;
+  height: 40px;
+  margin-top: 30px;
+  background: #7fb9d1;
+  border: #7fb9d1;
+  border-radius: 10px;
+  color: white;
+  font-family: 'Comfortaa', sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.submitAdd:hover {
+  background: #d4dfee;
+  color: white;
 }

@@ -45,7 +45,14 @@ def forum(request, userID):
     data = {"ID": userID,
             "forums": allposts}
     template = loader.get_template('forum.html')
-    return HttpResponse(template.render(context= data))
+
+    if request.method == "POST":
+        print("hi")
+        name = request.POST.get("inputname")
+        text = request.POST.get("inputtext") 
+        new  = forumpost(authorid= userID, author  = name, text = text)
+        new.save()
+    return HttpResponse(template.render(request=request, context= data))
 
 def todo(request, userID):
     Todotasks= todotask.objects.filter(authorid = userID, done = False)
@@ -61,6 +68,11 @@ def todo(request, userID):
             task = todotask.objects.get(id= taskID)
             task.done = False
             task.save()
+        if "submitAdd" in request.POST:
+            text = request.POST.get("textInput")
+            date = request.POST.get('dateInput')
+            new = todotask(authorid=userID, text= text, due=date)
+            new.save()
         
     data = {"ID": userID,
             "tasks": Todotasks,
@@ -72,7 +84,10 @@ def journal(request, userID):
     if request.method == "POST":
         event= request.POST.get("date-event-input")
         text = request.POST.get("journal-text-area")
+        rating = request.POST.get("day-rating")
 
+        new = journalentry(authorid = userID, event = event, text = text, rating = rating)
+        new.save()
 
     data = {"ID": userID}
     template = loader.get_template('journal.html')

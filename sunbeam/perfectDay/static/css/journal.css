@@ -32,13 +32,14 @@ html {
 
 .journal-container {
     max-width: 800px;
-    margin: 40px auto;
+    margin: 10px auto 40px auto;
     padding: 0 20px;
     font-family: "Comfortaa", sans-serif;
-    margin-left: 16%;
-    margin-top: 10px;
+    /*margin-left: 16%;*/
+    /*margin-top: 10px;*/
     display: flex;
     flex-direction: column;
+
 }
 
 .journal-page-title {
@@ -52,26 +53,28 @@ html {
 }
 
 .journal-card {
-    background-color: var(--White);
+    background-color: #f5faff;
     padding: 40px;
-    border-radius: 4px;
+    border-radius: 20px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 .date-event-input {
-    width: 100%;
-    border: 1px solid var(--Blue-Text-Color);
-    background-color: white;
-    border-radius: 8px;
-    font-size: 24px;
-    color: #000000;
-    font-family: "Comfortaa", sans-serif;
+    width: 300px;
+    height: 50px;
+    background: #ffffff;
+    border-radius: 20px;
+    border: 5px solid var(--Yellow-Color);
+    padding: 5px;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 20px;
     margin-bottom: 12px;
-    outline: none;
 }
 
 .textarea-wrapper {
-    border: 1px solid black;
+    border: 0px solid black;
     background-color: var(--Yellow-Color);
     padding: 16px;
     border-radius: 8px;
