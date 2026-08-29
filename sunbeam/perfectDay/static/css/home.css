@@ -167,11 +167,7 @@ h3 {
 
 /* LOGO */
 .icon {
-    width: 350px;
-    max-width: 40%;
-    height: auto;
-    display: block;
-    object-fit: contain;
+    width: 200px;
 }
 
 h4 {

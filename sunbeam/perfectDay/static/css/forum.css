@@ -33,7 +33,7 @@ html {
 
 /* main text */
 h1 {
-    color: white;
+    color: var(--Coral-Color);
     font-family: "Bungee", sans-serif;
     font-weight: 200;
     font-size: 70px;
@@ -131,7 +131,7 @@ h4 {
 }
 
 .DisplayContainer1 h1 {
-    color: var;
+    color: var(--Teal-Color);
     font-family: "Bungee", sans-serif;
     font-weight: 200;
     font-size: 24px;

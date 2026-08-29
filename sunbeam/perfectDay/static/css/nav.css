@@ -6,7 +6,7 @@
     --Orange-Color: #fcae7b;
     --Peach-Color: #FFDE96;
     --Coral-Color: #FA855A;
-    --Teal-Color: #578088;
+    --Teal-Color: rgb(12, 0, 99);
     --Light-Blue-Color: #eaf3ff;
     --White: #ffffff;
 }
@@ -33,7 +33,7 @@
     display: flex;
     list-style: none;
     gap: 24px;
-    color: var(--Yellow-Color); /*RACHEL DO THE COLORS*/
+    color: var(--Yellow-Color) !important; /*RACHEL DO THE COLORS*/
 }
 
 .nav-links a {
