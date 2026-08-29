@@ -16,6 +16,7 @@
     background-color: transparent;
     font-family: 'Spicy Rice', sans-serif;
     font-weight: auto;
+    color: #fffd9a; /*RACHEL DO THE COLORS*/
     
 }
 
@@ -23,7 +24,6 @@
     display: flex;
     list-style: none;
     gap: 35px;
-    color: #fffd9a; /*RACHEL DO THE COLORS*/
     font-family: "Sipcy Rice", sans-serif;
 }
 
