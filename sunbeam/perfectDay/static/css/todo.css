@@ -7,7 +7,7 @@
 :root {
     --Background-Color: #76afc8;
     --Yellow-Color: #fffd9a; 
-    --Blue-Text-Color: #213270;
+    --Blue-Text-Color: #192550;
     --Outline-Color: #faa9e6;
     --Orange-Color: #fcae7b;
     --Peach-Color: #FFDE96;
@@ -53,7 +53,14 @@ h3 {
     font-size: 30px;
     font-style: italic;
 }
-
+p {
+    color: var(--Blue-Text-Color);
+    font-family: "Comfortaa", sans-serif;
+    font-weight: 500;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+    font-size: 20px;
+}
 /* main */
 
 .heading {
@@ -65,11 +72,16 @@ h3 {
 
 .main-container {
   position: relative;
-  width: 700px;
+  
+  width: 600px;
   height: auto;
-  background: white;
-  border-radius: 60px;
-  padding: 40px;
+
+  background: transparent;
+  border: 5px dashed white;
+  border-radius: 20px;
+
+  padding: 10px;
+
   margin: auto;
   margin-top: 25px;
   
@@ -80,14 +92,18 @@ h3 {
 }
 
 .taskBox {
-  position: relative;
-  width: 500px;
-  height: auto;
-  background: var(--Light-Blue-Color);
-  border-radius: 60px;
-  padding: 5%;
-  margin: auto;
-  margin-top: 2%;
-  display: flex;
-  flex-direction: row;
+    position: relative;
+    width: 550px;
+    height: 40px;
+    background: var(--Light-Blue-Color);
+    border-radius: 20px;
+    padding: 5%;
+    margin: auto;
+    margin-top: 2%;
+
+    align-items: center;
+    justify-items: center;
+
+    display: flex;
+    flex-direction: row;
 }

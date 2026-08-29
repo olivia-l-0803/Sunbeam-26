@@ -11,7 +11,7 @@
 <head> 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forums</title>
+    <title>To Do List</title>
     <link rel="stylesheet" href="{% static 'css/todo.css' %}">
 </head>
 <body>
@@ -23,9 +23,13 @@
   
   <div class="main-container">
     {% for task in tasks%}
-      <div class="taskBox" id ="{{task.id}}">
-        {{task.text}}
+      <div class="taskBox" id ="{{task.id}}" data-id="{{task.id}}">
+        <input type="checkbox" class = doneToggle id ="{{task.id}}" >
+        <p>{{task.text}}</p>
       </div>
     {% endfor %}
   </div>
+
+  <script src="{% static 'js/todo.js' %}" defer></script>
+
 </body>

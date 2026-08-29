@@ -22,10 +22,43 @@
       </div>
     </div>  
   </div>
+
+  <!-- The Answer Container-->
   <div class="main-container1">
     <div class="content-wrapper1">
       <div class="DisplayContainer1">
-        <h1>this container is going to be where people make replies</h1>
+        <form id="answerForm">
+          <div>
+                <label for="name">Name:</label>
+                <input type="text" id="Name" readonly>
+          </div>
+          <div>
+                <label for="answerText">Review Paragraph</label>
+                <textarea id="answerText" placeholder="Write your thoughts below" required></textarea>
+          </div>
+          <!-- Submission Button -->
+              <button type="submit">
+                <span class="button-text">Submit Review</span>
+              </button>
+
+              <!-- Error/Success Messages -->
+              <div id="statusMsg"></div>
+            </form>
+        </div>
+
+        <!-- New Live Reviews Display Section -->
+        <div id="reviewsDisplayContainer">
+            <h2>Others' Replies</h2>
+            <div id="answersList">Loading replies...</div>
+        </div>
+      </div>
+    </div>  
+  </div>
+  <!-- Loads the replies -->
+  <div class="main-container3">
+    <div class="content-wrapper3">
+      <div class="DisplayContainer3">
+        <h1>What is your idea of a perfect day?</h1>
       </div>
     </div>  
   </div>
