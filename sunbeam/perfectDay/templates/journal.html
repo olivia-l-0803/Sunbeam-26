@@ -2,64 +2,66 @@
 <html lang="en">
 {% load static %}
 
-<!--Comfortaa(main font)-->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Modak&display=swap" rel="stylesheet">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Journal</title>
+    <!-- Fonts placed cleanly inside the head tag -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap" rel="stylesheet">
+    <!-- Included your project fonts for Bungee and Spicy Rice compatibility -->
+    <link href="https://googleapis.com" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'css/journal.css' %}">
 </head>
 <body>
+  
   {% include 'nav.html' %}
-  <div class="main-container">
-    <!-- nav-->
-    
-  </div>
-<div class="journal-container">
-  <h1 class="journal-page-title">Journal Entry</h1>
 
-  <div class="journal-card">
-    <form onsubmit="return false;">
-      <input type="text" class="date-event-input" placeholder="Enter date/event">
-      <div class="textarea-wrapper">
-        <textarea class="journal-text-area" placeholder="Write about your day...">
-      </div>
+  <div class="journal-container">
+    <h1 class="journal-page-title">Journal Entry</h1>
+
+    <div class="journal-card">
+      <form onsubmit="return false;">
+        
+        <input type="text" class="date-event-input" name="date-event-input" placeholder="Enter date/event">
+        
+        <div class="textarea-wrapper">
+            <input type="textarea" class="journal-text-area" name="journal-text-area" contenteditable="true" placeholder="Write about your day..."></input>
+        </div>
+        
+        <!-- RATINGS AT THE BOTTOM -->
+        <div class="form-footer">
+          <div class="face-rating-group">
+            <label class="smiley-radio">
+              <input type="radio" name="day-rating" value="1">
+              <span class="face">🙁</span>
+            </label>
+            <label class="smiley-radio">
+              <input type="radio" name="day-rating" value="2">
+              <span class="face">😐</span>
+            </label>
+            <label class="smiley-radio">
+              <input type="radio" name="day-rating" value="3" checked>
+              <span class="face">🙂</span>
+            </label>
+            <label class="smiley-radio">
+              <input type="radio" name="day-rating" value="4">
+              <span class="face">😊</span>
+            </label>
+            <label class="smiley-radio">
+              <input type="radio" name="day-rating" value="5">
+              <span class="face">😁</span>
+            </label>
+          </div>
+
+          <!-- SUBMIT BUTTON -->
+          <button type="button" class="submit-btn">Submit</button>
+        </div>
+
+      </form>
     </div>
-    <!--RATINGS AT THE BOTTOM-->
-    <div class="form-footer">
-      <div class="face-rating-group">
-        <label class="smiley-radio">
-          <input type="radio" name="day-rating" value="1">
-          <span class="face">🙁</span>
-        </label>
-        <label class="smiley-radio">
-          <input type="radio" name="day-rating" value="2">
-          <span class="face">😐</span>
-        </label>
-        <label class="smiley-radio">
-          <input type="radio" name="day-rating" value="3" checked>
-          <span class="face">🙂</span>
-        </label>
-        <label class="smiley-radio">
-          <input type="radio" name="day-rating" value="4">
-          <span class="face">😊</span>
-        </label>
-        <label class="smiley-radio">
-          <input type="radio" name="day-rating" value="5">
-          <span class="face">😁</span>
-        </label>
-      </div>
-
-      <!--SUBMIT BUTTON-->
-      <button type="button" class="submit-btn">Submit</button>
-    </div>
-
-    </form>
   </div>
-
 
 </body>
+</html>

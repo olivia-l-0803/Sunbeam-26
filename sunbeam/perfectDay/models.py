@@ -19,3 +19,9 @@ class todotask(models.Model):
     text= models.CharField()
     done = models.BooleanField(default=False)
     due = models.DateTimeField()
+
+class journalentry(models.Model):
+    authorid = models.SmallIntegerField()
+    event = models.CharField()
+    text= models.CharField()
+    rating = models.CharField()

@@ -60,7 +60,9 @@ html {
 
 .date-event-input {
     width: 100%;
-    border: none;
+    border: 1px solid var(--Blue-Text-Color);
+    background-color: white;
+    border-radius: 8px;
     font-size: 24px;
     color: #000000;
     font-family: "Comfortaa", sans-serif;
@@ -72,19 +74,30 @@ html {
     border: 1px solid black;
     background-color: var(--Yellow-Color);
     padding: 16px;
-    margin-bottom: 16px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    width: 100%;
 }
 
-.journal-textarea {
+.journal-text-area {
     width: 100%;
-    height: 250px;
-    background: transparent;
+    min-height: 180px;
+    max-height: 300px;
+    overflow-y: auto;
+    outline: none; 
     border: none;
+    padding: 8px 4px; 
     font-size: 18px;
-    font-family: "Comfortaa", sans-serif;
+    font-family: 'Comfortaa', sans-serif;
     color: black;
-    resize: none;
-    outline: none;
+    text-align: left;
+}
+
+
+.journal-text-area:empty::before {
+    content: attr(placeholder);
+    color: rgba(33, 50, 112, 0.5); 
+    cursor: text;
 }
 
 .form-footer {
@@ -123,11 +136,13 @@ html {
 .submit-btn {
     background: var(--Coral-Color);
     border: none;
-    font-size: 22px;
+    border-radius: 8px;
+    font-size: 20px;
+    color: var(--White);
     cursor: pointer;
     font-family: "Bungee", sans-serif;
     transition: color 0.2s;
-    padding: 0;
+    padding: 10px 10px;
 }
 
 .submit-btn:hover {

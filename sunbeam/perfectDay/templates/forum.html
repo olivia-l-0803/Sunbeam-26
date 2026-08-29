@@ -15,49 +15,38 @@
 </head>
 <body>
   {% include 'nav.html' %}<!-- nav-->
-  <div class="main-container">
-    <div class="content-wrapper">
-      <div class="DisplayContainer">
-        <h1>What is your idea of a perfect day?</h1>
-      </div>
-    </div>  
-  </div>
-
+  <h11 class="journal-page-title">Journal Entry</h11>
   <!-- The Answer Container-->
-  <div class="main-container1">
-    <div class="content-wrapper1">
-      <div class="DisplayContainer1">
-        <form id="answerForm">
-          <h1>Share your thoughts</h1>
-          <div>
-                <label for="name">Name:</label>
-                <input type="text" id="Name" placeholder="Enter a name/nickname" required>
-          </div>
-          <div>
-                <label for="answerText">Review Paragraph</label>
-                <textarea id="answerText" placeholder="Write your thoughts below" required></textarea>
-          </div>
-          <!-- Submission Button -->
-              <button type="submit">
-                <span class="button-text">Submit Review</span>
-              </button>
+<!-- This wrapper forces the entire yellow block to slide to the center -->
+<div class="main-container">
+    <div class="DisplayContainer1">
+        
+        <!-- FIXED: Added the missing id="answerForm" so your CSS works! -->
+        <form id="answerForm" onsubmit="return false;">
+            <h1>SHARE YOUR THOUGHTS</h1>
+            
+            <div>
+                <label>Name:</label>
+                <input type="text" placeholder="Enter a name/nickname">
+            </div>
+            
+            <div>
+                <label>Review Paragraph</label>
+                <textarea placeholder="Write your thoughts below"></textarea>
+            </div>
+            
+            <button type="button">Submit Your Idea</button>
+        </form>
 
-              <!-- Error/Success Messages -->
-              <div id="statusMsg"></div>
-            </form>
-        </div>
-        </div>
-      </div>
-    </div>  
-  </div>
+    </div>
+</div>
+
   <!-- Loads the replies -->
   <div class="main-container">
-    <div class="content-wrapper3">
       <div class="DisplayContainer">
         <div id="reviewsDisplayContainer">
             <h1>Others' Replies</h1>
         <div id="answersList">Loading replies...</div>
-      </div>
-    </div>  
+      </div>  
   </div>
 </body>

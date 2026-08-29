@@ -20,6 +20,8 @@
     <h1>TO DO 📚: </h1>
     <h3>Plan your perfect day. </h3>
   </div>
+
+  <button class= addBtn id = addBtn name = addBtn>+ Add</button>
   
   <div class="main-container" id= "todo-container">
     {% for task in tasks %}
@@ -38,19 +40,39 @@
   </div>
   <h3 style="margin-left: 16%; margin-top: 30px;">You've completed so much today!</h3>
   <div class="main-container" id= "todo-container">
-    {% for task in tasks %}
+    {% for task in done %}
       {% if task.done %}
       <div class="untaskBox">
         <form  method="POST" style="display: flex; flex-direction: row;">
           {% csrf_token %}
           <button type= "submit" class = unToggle id ="{{task.id}}" name ="unsubmit" value ="{{task.id}}" > </button>
-          <p>{{task.text}}</p>
+          <p style="text-decoration: line-through;">{{task.text}}</p>
         </form>
       </div>
       {% endif %}
     {% empty %} 
       <p>Nothing here yet!</p>
     {% endfor %}
+  </div>
+
+  <div class="addModal">
+    <div class="modalContent">
+      <p style=" color: var(--Blue-Text-Color); font-family: 'Mouse Memoirs', sans-serif; font-weight: 200; font-size: 70px;">
+      Add a task</p>
+
+      <form method="POST">
+        {% csrf_token %}
+        <div class="inputGroup">
+          <label>Name of task</label>
+          <input class= textInput name= textInput type="text">
+        </div>
+        <div class="inputGroup">
+          <label>Due Date</label>
+          <input class= "dateInput" name="dateInput" type="date">
+        </div>
+
+      </form>
+    </div>
   </div>
 
   <script src="{% static 'js/todo.js' %}" defer></script>
