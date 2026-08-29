@@ -3,6 +3,7 @@ from django.template import loader
 from django.contrib import messages
 from django.http import HttpResponse, JsonResponse
 from .models import * 
+from datetime import datetime
 
 
 
@@ -40,12 +41,16 @@ def homePage(request, userID):
     return HttpResponse(template.render(context= data))
 
 def forum(request, userID):
-    data = {"ID": userID}
+    allposts= forumpost.objects.all().values()
+    data = {"ID": userID,
+            "forums": allposts}
     template = loader.get_template('forum.html')
     return HttpResponse(template.render(context= data))
 
 def todo(request, userID):
-    data = {"ID": userID}
+    allTodo= todotask.objects.filter(authorid = userID)
+    data = {"ID": userID,
+            "tasks": allTodo }
     template = loader.get_template('todo.html')
     return HttpResponse(template.render(context= data))
 

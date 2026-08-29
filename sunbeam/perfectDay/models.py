@@ -12,5 +12,10 @@ class user(models.Model):
 class forumpost(models.Model):
     authorid = models.SmallIntegerField()
     author = models.CharField()
-
     text= models.CharField()
+
+class todotask(models.Model):
+    authorid = models.SmallIntegerField()
+    text= models.CharField()
+    done = models.BooleanField(default=False)
+    due = models.DateTimeField()

@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
+} 
 
 :root {
     --Background-Color: #76afc8;
@@ -122,9 +122,23 @@ h3 {
 }
 /* containers */
 .main-container {
-    padding: 60px 40px;
+    padding: 60px 80px;
     position: relative;
     z-index: 1;
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.text-block {
+    flex: 1;
 }
 
 .welcome-group {
@@ -149,6 +163,15 @@ h3 {
     line-height: 1.1;
     margin: 0;
     padding-left: 24px;
+}
+
+/* LOGO */
+.icon {
+    width: 350px;
+    max-width: 40%;
+    height: auto;
+    display: block;
+    object-fit: contain;
 }
 
 h4 {
