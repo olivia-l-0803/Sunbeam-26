@@ -1,0 +1,53 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Background-Color: #76afc8;
+    --Yellow-Color: #fffd9a; 
+    --Blue-Text-Color: #213270;
+    --Outline-Color: #faa9e6;
+    --Orange-Color: #fcae7b;
+    --Peach-Color: #FFDE96;
+    --Coral-Color: #FA855A;
+    --Teal-Color: rgb(12, 0, 99);
+    --Light-Blue-Color: #eaf3ff;
+    --White: #ffffff;
+}
+
+body {
+    background-color: rgb(171, 206, 247);
+    /*min-height: 100vh;*/
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+
+}
+
+html {
+    width: 100%;
+}
+
+.journal-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: "Comfortaa", sans-serif;
+    margin-left: 16%;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.journal-page-title {
+    color: white;
+    font-family: "Bungee", sans-serif;
+    font-weight: 200;
+    font-size:55px;
+    font-style: normal;
+    margin: 0;
+    line-height: 1.1;
+}
+

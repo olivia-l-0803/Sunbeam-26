@@ -25,8 +25,8 @@
     {% for task in tasks %}
       {% if not task.done %}
       <div class="taskBox">
-        <button class = doneToggle id ="{{task.id}}" onclick="markedDone(this)" data-id="{{task.id}}"> </button>
-        <p>{{task.text}}</p><p>{{task.id}}</p>
+        <button type= "submit" class = doneToggle id ="{{task.id}}" name ="taskMarked" value ="{{task.id}}" > </button>
+        <p>{{task.text}}</p>
       </div>
       {% endif %}
     {% empty %} 

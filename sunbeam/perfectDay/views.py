@@ -49,6 +49,11 @@ def forum(request, userID):
 
 def todo(request, userID):
     allTodo= todotask.objects.filter(authorid = userID)
+    if request.method == "POST":
+        taskID = request.POST.get("taskMarked")
+        task = todotask.objects.get(id= taskID)
+        print(task)
+        
     data = {"ID": userID,
             "tasks": allTodo }
     template = loader.get_template('todo.html')

@@ -10,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forums</title>
+    <title>Journal</title>
     <link rel="stylesheet" href="{% static 'css/journal.css' %}">
 </head>
 <body>
@@ -20,9 +20,45 @@
     
   </div>
 <div class="journal-container">
-  <h2 class="section-title">Write An Entry</h2>
-  <form onsubmit="return false;">
-    <input type="text" class="journal-input" placeholder="Title your day...">
-    
+  <h1 class="journal-page-title">Journal Entry</h1>
+
+  <div class="journal-card">
+    <form onsubmit="return false;">
+      <input type="text" class="date-event-input" placeholder="Enter date/event">
+      <div class="textarea-wrapper">
+        <textarea class="journal-text-area" placeholder="Write about your day...">
+      </div>
+    <!--RATINGS-->
+    <div class="form-footer">
+      <div class="face-rating-group">
+        <label class="smiley-radio">
+          <input type="radio" name="day-rating" value="1">
+          <span class="face">🙁</span>
+        </label>
+        <label class="smiley-radio">
+          <input type="radio" name="day-rating" value="2">
+          <span class="face">😐</span>
+        </label>
+        <label class="smiley-radio">
+          <input type="radio" name="day-rating" value="3" checked>
+          <span class="face">🙂</span>
+        </label>
+        <label class="smiley-radio">
+          <input type="radio" name="day-rating" value="4">
+          <span class="face">😊</span>
+        </label>
+        <label class="smiley-radio">
+          <input type="radio" name="day-rating" value="5">
+          <span class="face">😁</span>
+        </label>
+      </div>
+
+      <!--SUBMIT BUTTON-->
+      <button type="button" class="submit-btn">Submit</button>
+    </div>
+
+    </form>
+  </div>
+
 
 </body>
