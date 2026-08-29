@@ -33,7 +33,7 @@ html {
 
 /* main text */
 h1 {
-    color: var(--Coral-Color);
+    color: #ffb482;
     font-family: "Bungee", sans-serif;
     font-weight: 200;
     font-size: 70px;
