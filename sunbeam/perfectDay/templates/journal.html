@@ -22,8 +22,8 @@
     <h1 class="journal-page-title">Journal Entry</h1>
 
     <div class="journal-card">
-      <form onsubmit="return false;">
-        
+      <form method="POST">
+        {% csrf_token %}
         <input type="text" class="date-event-input" name="date-event-input" placeholder="Enter date/event">
         
         <div class="textarea-wrapper">
@@ -56,15 +56,21 @@
           </div>
 
           <!-- SUBMIT BUTTON -->
-          <button type="button" class="submit-btn">Submit</button>
+          
         </div>
-
+        <button type="submit" class="submit-btn">Submit</button>
       </form>
     </div>
     <div class="journal-card">
-      <h2 class="journal-card-title">Previous Entries</h2>
+      <h2 class="journal-card-title">Your Previous Entries</h2>
       <div class="previous-entries">
-        <!-- Previous entries will be dynamically loaded here -->
+        <div id="reviewsDisplayContainer">
+        {% for journal in journals %}
+        <div class="oldBox">
+          <p id="eventP">{{journal.event}}</p>
+          <p>{{journal.text}}</p>
+        </div>
+        {% endfor %} 
       </div>
   </div>
 

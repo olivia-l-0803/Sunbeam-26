@@ -53,7 +53,7 @@ html {
 }
 
 .journal-card {
-    background-color: #f5faff;
+    background-color: #e0e5eb;
     padding: 40px;
     border-radius: 20px;
     box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
@@ -146,8 +146,29 @@ html {
     font-family: "Bungee", sans-serif;
     transition: color 0.2s;
     padding: 10px 10px;
+    margin-top: 30px;
 }
 
 .submit-btn:hover {
     color: var(--Peach-Color);
+}
+
+.oldBox{
+    position: relative;
+    width: 550px;
+    height: auto;
+    background: white;
+    border-radius: 20px;
+    padding: 5%;
+    margin: auto;
+    margin-top: 2%;
+
+    align-items: left;
+
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+#eventP{
+    font-size: 25 !important;
 }

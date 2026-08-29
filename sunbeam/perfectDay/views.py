@@ -81,6 +81,8 @@ def todo(request, userID):
     return HttpResponse(template.render(request= request,context= data))
 
 def journal(request, userID):
+    yourjournal = journalentry.objects.filter(authorid=userID)
+
     if request.method == "POST":
         event= request.POST.get("date-event-input")
         text = request.POST.get("journal-text-area")
@@ -89,6 +91,7 @@ def journal(request, userID):
         new = journalentry(authorid = userID, event = event, text = text, rating = rating)
         new.save()
 
-    data = {"ID": userID}
+    data = {"ID": userID,
+            'journals': yourjournal}
     template = loader.get_template('journal.html')
     return HttpResponse(template.render(request=request, context= data))
