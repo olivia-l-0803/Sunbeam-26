@@ -1,4 +1,15 @@
-
+:root {
+    --Background-Color: #76afc8;
+    --Yellow-Color: #fffd9a; 
+    --Blue-Text-Color: #213270;
+    --Nav-Color: #ff9864;
+    --Orange-Color: #fcae7b;
+    --Peach-Color: #FFDE96;
+    --Coral-Color: #FA855A;
+    --Teal-Color: #578088;
+    --Light-Blue-Color: #eaf3ff;
+    --White: #ffffff;
+}
 
 /* nav bar */
 .nav-container {
@@ -17,6 +28,7 @@
     font-family: 'Spicy Rice', sans-serif;
     font-weight: auto;
     color: #fffd9a; /*RACHEL DO THE COLORS*/
+    text-decoration: none;
     
 }
 
@@ -25,10 +37,12 @@
     list-style: none;
     gap: 35px;
     font-family: "Sipcy Rice", sans-serif;
+    color: var(--Yellow-Color);
 }
 
 .nav-links a {
     text-decoration: none;
+    color: var(--Yellow-Color);
     font-size: 25px;
 }
 

@@ -6,10 +6,8 @@ from .models import *
 
 
 
-
 def login(request):
     users= user.objects.all().values()
-
     if request.method == 'POST':
         inputUser = request.POST.get("usernamefield")
         inputPass = request.POST.get("passwordfield")

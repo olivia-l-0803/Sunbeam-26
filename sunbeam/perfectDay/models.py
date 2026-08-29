@@ -9,16 +9,8 @@ class user(models.Model):
     def __str__(self):
         return self.username
 
-class forumquestion(models.Model):
-    authorid = models.SmallIntegerField()
-    author = models.CharField()
-
-    text= models.CharField()
-
 class forumpost(models.Model):
     authorid = models.SmallIntegerField()
     author = models.CharField()
-
-    questionid =  models.SmallIntegerField()
 
     text= models.CharField()
