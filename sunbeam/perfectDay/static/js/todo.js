@@ -16,6 +16,7 @@ const closeBtn = document.querySelector(".close-btn");
 const addModal = document.querySelector(".addModal");
 
 addBtn.addEventListener("click", function() {
+  console.log("hello")
   addModal.style.display = "flex";  
 });
 
