@@ -79,7 +79,7 @@ WSGI_APPLICATION = 'sunbeam.wsgi.application'
 
 DATABASES = {
     'default': dj_database_url.config(
-        default='postgresql://postgres:postgres@localhost:5432/mysite',
+        default='postgresql://sunbeam_sql_user:4MQJS8wPbzfpgbgWWomEVCUiPOq1OqYe@dpg-daborau7bikc73dq8u30-a.ohio-postgres.render.com/sunbeam_sql',
         conn_max_age=600
     )
 }
