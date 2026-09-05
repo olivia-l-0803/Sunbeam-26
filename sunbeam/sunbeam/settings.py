@@ -25,8 +25,14 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get('SECRET_KEY','django-insecure-7j8qr50c0cwk$8042)6f$#)597ka4axx2z^6e-@7+!%oge*_o7')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-#DEBUG = 'True'
-DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+
+#USE THIS WHEN DEPLOY 😱😱😱😱😱😱😱😱😱
+""" DEBUG = os.environ.get('DEBUG', 'False') == 'True'
+API_URL= "https://sunbeam-26.onrender.com/" """
+
+#Development
+DEBUG=True
+API_URL= "http://localhost:8000"
 
 ALLOWED_HOSTS = ['*']
 
@@ -85,12 +91,14 @@ DATABASES = {
         ) 
 }
 
-""" 'default': dj_database_url.config(
+""" #Deploy
+    'default': dj_database_url.config(
             default='postgresql://sunbeam_sql_user:4MQJS8wPbzfpgbgWWomEVCUiPOq1OqYe@dpg-daborau7bikc73dq8u30-a.ohio-postgres.render.com/sunbeam_sql',
             conn_max_age=600
         ) """
 
-""" 'default': { #og backend
+""" #development
+    'default': { 
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     } """
@@ -103,7 +111,7 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
     },
     {
-        'NAME': 'django.contrib.auth.password_validation.MinimumLengthValidator',
+        'NAME': 'django.contrib.auth.password_valitaticdation.MinimumLengthValidator',
     },
     {
         'NAME': 'django.contrib.auth.password_validation.CommonPasswordValidator',
@@ -129,11 +137,14 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.2/howto/static-files/
 
+
+#Deploy
 STATIC_URL = 'static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'sunbean/static')
 
 if not DEBUG:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
+
     
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.2/ref/settings/#default-auto-field
