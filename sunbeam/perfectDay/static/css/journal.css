@@ -98,7 +98,6 @@ html {
 
     overflow-wrap: break-word;
     white-space: pre-wrap;
-    word-break: break-all;
     overflow-y: auto;
     overflow-x: none;
 }
