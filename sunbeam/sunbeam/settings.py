@@ -78,17 +78,20 @@ WSGI_APPLICATION = 'sunbeam.wsgi.application'
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
 DATABASES = {
-    """ 'default': dj_database_url.config(
-        default='postgresql://sunbeam_sql_user:4MQJS8wPbzfpgbgWWomEVCUiPOq1OqYe@dpg-daborau7bikc73dq8u30-a.ohio-postgres.render.com/sunbeam_sql',
-        conn_max_age=600
-    ), """
-
     'default': { #og backend
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+    
 }
-
+""" 'default': dj_database_url.config(
+            default='postgresql://sunbeam_sql_user:4MQJS8wPbzfpgbgWWomEVCUiPOq1OqYe@dpg-daborau7bikc73dq8u30-a.ohio-postgres.render.com/sunbeam_sql',
+            conn_max_age=600
+        ) """
+""" 'default': { #og backend
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR / 'db.sqlite3',
+    } """
 
 # Password validation
 # https://docs.djangoproject.com/en/5.2/ref/settings/#auth-password-validators
