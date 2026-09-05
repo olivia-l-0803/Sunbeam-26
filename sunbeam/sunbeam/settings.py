@@ -140,7 +140,7 @@ USE_TZ = True
 
 #Deploy
 STATIC_URL = 'static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'sunbean/static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'perfectDay/static')
 
 if not DEBUG:
     STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
