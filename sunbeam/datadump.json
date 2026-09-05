@@ -1,1 +1,1074 @@
-ÿþ
+[
+{
+    "model": "auth.user",
+    "fields": {
+        "password": "pbkdf2_sha256$1000000$i6xKnvWnTPwoXKgG6SvPGu$MZ9RKzUCIx9juKAaMWMClYzI3ckChqpx2f6RpFWwCrU=",
+        "last_login": "2026-08-29T14:44:42.946Z",
+        "is_superuser": true,
+        "username": "liver",
+        "first_name": "",
+        "last_name": "",
+        "email": "olivialu415@gmail.com",
+        "is_staff": true,
+        "is_active": true,
+        "date_joined": "2026-08-29T13:55:03.021Z",
+        "groups": [],
+        "user_permissions": []
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "39j5th5vntdkv0p2i6sfpn7j3aqmrg69",
+    "fields": {
+        "session_data": ".eJxVjMEOgjAQRP-lZ9Mslm4pR8PFg9_Q7NKtoIYmFE7GfxcSDnqcmTfvrQKtyxDWInMYo2pVpU6_HVP_lGkf4oOme9Z9npZ5ZL0j-liLvuUor8vB_gkGKsP2dghIINJXjWPmyN420RB7tg7OFdeYxHmHtQAAWWQE47aAGCklMZt011071dafL2OLOyc:1x0SbY:mO5KaPiwbZ1Jp-dUoAon4qd8Oj_ag2kY_QPwlJWyvk0",
+        "expire_date": "2026-09-12T23:36:56.008Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "cbs7ue9517he3kxw05nlgp6vdel6rrni",
+    "fields": {
+        "session_data": "eyJ1c2VySUQiOjF9:1x0Neb:IiYUpnxAa6HgwXKzLf7Ag39W6TUlMbIiVCb_iYsN9Cc",
+        "expire_date": "2026-09-12T18:19:45.660Z"
+    }
+},
+{
+    "model": "sessions.session",
+    "pk": "jd10c0d93z8milqlagcwl6o6jsfqpp2w",
+    "fields": {
+        "session_data": "eyJ1c2VySUQiOjF9:1x0O4a:hEMOvjdrwK6G9tcanfJhWuNsypZ7yCR1ofqMukeuHho",
+        "expire_date": "2026-09-12T18:46:36.650Z"
+    }
+},
+{
+    "model": "perfectDay.user",
+    "pk": 1,
+    "fields": {
+        "username": "olivia_l",
+        "password": "testtest"
+    }
+},
+{
+    "model": "perfectDay.user",
+    "pk": 2,
+    "fields": {
+        "username": "christina",
+        "password": "testtest"
+    }
+},
+{
+    "model": "perfectDay.user",
+    "pk": 3,
+    "fields": {
+        "username": "rachel",
+        "password": "dripdrip"
+    }
+},
+{
+    "model": "perfectDay.user",
+    "pk": 4,
+    "fields": {
+        "username": "guest",
+        "password": "guest"
+    }
+},
+{
+    "model": "perfectDay.forumpost",
+    "pk": 1,
+    "fields": {
+        "authorid": 1,
+        "author": "olivia_l",
+        "text": "My perfect day is to sleep in bed"
+    }
+},
+{
+    "model": "perfectDay.forumpost",
+    "pk": 2,
+    "fields": {
+        "authorid": 1,
+        "author": "Tina",
+        "text": "Listening to UK rap all day"
+    }
+},
+{
+    "model": "perfectDay.forumpost",
+    "pk": 9,
+    "fields": {
+        "authorid": 2,
+        "author": "Sunbeam Coder",
+        "text": "I think the perfect day involves coming to a Sunbeam Hackathon! It includes many fun activities and I get to meet new people!"
+    }
+},
+{
+    "model": "perfectDay.forumpost",
+    "pk": 10,
+    "fields": {
+        "authorid": 2,
+        "author": "Reader1",
+        "text": "A perfect day to me means reading a book on the couch while it's raining outside."
+    }
+},
+{
+    "model": "perfectDay.forumpost",
+    "pk": 11,
+    "fields": {
+        "authorid": 4,
+        "author": "vedanshi",
+        "text": "My perfect day would be spent at the beach :)"
+    }
+},
+{
+    "model": "perfectDay.forumpost",
+    "pk": 12,
+    "fields": {
+        "authorid": 4,
+        "author": "annie",
+        "text": "hanging out with my friends "
+    }
+},
+{
+    "model": "perfectDay.forumpost",
+    "pk": 13,
+    "fields": {
+        "authorid": 4,
+        "author": "Jaelyn",
+        "text": "today was very fun!!"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 1,
+    "fields": {
+        "authorid": 1,
+        "text": "Eat Lunch",
+        "done": false,
+        "due": "2026-08-29T12:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 2,
+    "fields": {
+        "authorid": 1,
+        "text": "Work on projects",
+        "done": false,
+        "due": "2026-08-29T13:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 4,
+    "fields": {
+        "authorid": 1,
+        "text": "Tickle Olivia",
+        "done": true,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 14,
+    "fields": {
+        "authorid": 2,
+        "text": "Go to Sunbeam Hackathon",
+        "done": true,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 15,
+    "fields": {
+        "authorid": 2,
+        "text": "Present hackathon project!",
+        "done": false,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 16,
+    "fields": {
+        "authorid": 4,
+        "text": "Short run",
+        "done": false,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 17,
+    "fields": {
+        "authorid": 4,
+        "text": "Drink water",
+        "done": false,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 18,
+    "fields": {
+        "authorid": 1,
+        "text": "Workout",
+        "done": false,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 19,
+    "fields": {
+        "authorid": 4,
+        "text": "Grab a snack",
+        "done": false,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 20,
+    "fields": {
+        "authorid": 4,
+        "text": "Do homework",
+        "done": true,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.todotask",
+    "pk": 21,
+    "fields": {
+        "authorid": 4,
+        "text": "Play instrument",
+        "done": true,
+        "due": "2026-08-29T00:00:00Z"
+    }
+},
+{
+    "model": "perfectDay.journalentry",
+    "pk": 1,
+    "fields": {
+        "authorid": 1,
+        "event": "Hackathon",
+        "text": "Today i attended a hackthon in manhattan and it was scary",
+        "rating": "5"
+    }
+},
+{
+    "model": "perfectDay.journalentry",
+    "pk": 2,
+    "fields": {
+        "authorid": 1,
+        "event": "Bagel",
+        "text": "I ate food",
+        "rating": "5"
+    }
+},
+{
+    "model": "perfectDay.journalentry",
+    "pk": 3,
+    "fields": {
+        "authorid": 1,
+        "event": "8/28/26",
+        "text": "I passed my test! It was so hard and I literally studied for 7 hours. But I got a high score!",
+        "rating": "5"
+    }
+},
+{
+    "model": "perfectDay.journalentry",
+    "pk": 4,
+    "fields": {
+        "authorid": 1,
+        "event": "8/29/26",
+        "text": "Today I went to the park and fed some birds. They swarmed me and then pooped on me...",
+        "rating": "1"
+    }
+},
+{
+    "model": "perfectDay.journalentry",
+    "pk": 5,
+    "fields": {
+        "authorid": 1,
+        "event": "08/29/2026",
+        "text": "Today, I participated in the Sunbeam hackathon! It's my first ever hackathon and hopefully not the last!",
+        "rating": "5"
+    }
+},
+{
+    "model": "perfectDay.journalentry",
+    "pk": 6,
+    "fields": {
+        "authorid": 1,
+        "event": "",
+        "text": "freg",
+        "rating": "3"
+    }
+},
+{
+    "model": "perfectDay.journalentry",
+    "pk": 7,
+    "fields": {
+        "authorid": 1,
+        "event": "",
+        "text": "freg",
+        "rating": "3"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+        "action_time": "2026-08-29T14:48:11.263Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "olivia",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+        "action_time": "2026-08-29T14:50:11.457Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "auth",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "olivia",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+        "action_time": "2026-08-29T14:52:54.891Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "user object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+        "action_time": "2026-08-29T14:54:54.751Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "olivia-l",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+        "action_time": "2026-08-29T14:55:05.851Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "user"
+        ],
+        "object_id": "2",
+        "object_repr": "christina",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+        "action_time": "2026-08-29T14:55:16.343Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "user"
+        ],
+        "object_id": "3",
+        "object_repr": "rachel",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+        "action_time": "2026-08-29T16:19:22.049Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "user"
+        ],
+        "object_id": "1",
+        "object_repr": "olivia_l",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Username\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+        "action_time": "2026-08-29T16:19:50.546Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "user"
+        ],
+        "object_id": "4",
+        "object_repr": "guest",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+        "action_time": "2026-08-29T16:30:57.192Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "1",
+        "object_repr": "forumpost object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+        "action_time": "2026-08-29T17:05:28.794Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "1",
+        "object_repr": "forumpost object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+        "action_time": "2026-08-29T18:03:02.678Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "1",
+        "object_repr": "todotask object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+        "action_time": "2026-08-29T18:03:16.457Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "1",
+        "object_repr": "todotask object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+        "action_time": "2026-08-29T18:03:39.677Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "2",
+        "object_repr": "todotask object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+        "action_time": "2026-08-29T20:08:35.322Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "2",
+        "object_repr": "todotask object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Done\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+        "action_time": "2026-08-29T20:08:37.878Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "1",
+        "object_repr": "todotask object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Done\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+        "action_time": "2026-08-29T20:08:46.307Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "2",
+        "object_repr": "todotask object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Done\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+        "action_time": "2026-08-29T20:08:57.284Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "2",
+        "object_repr": "todotask object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Done\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+        "action_time": "2026-08-29T20:10:27.571Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "2",
+        "object_repr": "todotask object (2)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+        "action_time": "2026-08-29T20:10:29.868Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "1",
+        "object_repr": "todotask object (1)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+        "action_time": "2026-08-29T20:10:31.445Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "2",
+        "object_repr": "todotask object (2)",
+        "action_flag": 2,
+        "change_message": "[]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "13",
+        "object_repr": "todotask object (13)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "12",
+        "object_repr": "todotask object (12)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "11",
+        "object_repr": "todotask object (11)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "10",
+        "object_repr": "todotask object (10)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "9",
+        "object_repr": "todotask object (9)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "8",
+        "object_repr": "todotask object (8)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "7",
+        "object_repr": "todotask object (7)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "6",
+        "object_repr": "todotask object (6)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+        "action_time": "2026-08-29T21:35:00.435Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "5",
+        "object_repr": "todotask object (5)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+        "action_time": "2026-08-29T21:45:26.175Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "4",
+        "object_repr": "forumpost object (4)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+        "action_time": "2026-08-29T21:45:26.175Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "3",
+        "object_repr": "forumpost object (3)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+        "action_time": "2026-08-29T21:45:37.398Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "1",
+        "object_repr": "forumpost object (1)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Text\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+        "action_time": "2026-08-29T21:45:55.305Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "2",
+        "object_repr": "forumpost object (2)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Author\", \"Text\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+        "action_time": "2026-08-29T21:46:07.829Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "5",
+        "object_repr": "forumpost object (5)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+        "action_time": "2026-08-29T21:55:53.237Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "journalentry"
+        ],
+        "object_id": "1",
+        "object_repr": "journalentry object (1)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+        "action_time": "2026-08-29T21:56:42.448Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "journalentry"
+        ],
+        "object_id": "2",
+        "object_repr": "journalentry object (2)",
+        "action_flag": 1,
+        "change_message": "[{\"added\": {}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+        "action_time": "2026-08-29T22:02:23.093Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "todotask"
+        ],
+        "object_id": "3",
+        "object_repr": "todotask object (3)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+        "action_time": "2026-08-29T22:07:19.044Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "journalentry"
+        ],
+        "object_id": "4",
+        "object_repr": "journalentry object (4)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Event\", \"Text\", \"Rating\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+        "action_time": "2026-08-29T22:07:55.236Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "journalentry"
+        ],
+        "object_id": "3",
+        "object_repr": "journalentry object (3)",
+        "action_flag": 2,
+        "change_message": "[{\"changed\": {\"fields\": [\"Event\", \"Text\", \"Rating\"]}}]"
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+        "action_time": "2026-08-29T22:08:15.977Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "8",
+        "object_repr": "forumpost object (8)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+        "action_time": "2026-08-29T22:08:15.977Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "7",
+        "object_repr": "forumpost object (7)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+},
+{
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+        "action_time": "2026-08-29T22:08:15.977Z",
+        "user": [
+            "liver"
+        ],
+        "content_type": [
+            "perfectDay",
+            "forumpost"
+        ],
+        "object_id": "6",
+        "object_repr": "forumpost object (6)",
+        "action_flag": 3,
+        "change_message": ""
+    }
+}
+]
