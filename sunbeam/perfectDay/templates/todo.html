@@ -26,11 +26,13 @@
   <div class="main-container" id= "todo-container">
     {% for task in tasks %}
       {% if not task.done %}
-      <div class="taskBox">
-        <form  method="POST" style="display: flex; flex-direction: row;">
+      <div class="taskBox"> 
+        <form  method="POST" style="display: flex; flex-direction: row; width:100%;">
           {% csrf_token %}
           <button type= "submit" class = doneToggle id ="{{task.id}}" name ="taskMarked" value ="{{task.id}}" > </button>
-          <p>{{task.text}}</p>
+          <p style="margin-top: auto; margin-bottom: auto;">{{task.text}}</p>
+
+          <div class="DueDate">Due: {{task.due}}</div>
         </form>
       </div>
       {% endif %}

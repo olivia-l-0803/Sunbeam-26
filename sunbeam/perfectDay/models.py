@@ -21,7 +21,7 @@ class todotask(models.Model):
     authorid = models.SmallIntegerField()
     text= models.CharField()
     done = models.BooleanField(default=False)
-    due = models.DateTimeField()
+    due = models.DateField()
 
     def __str__(self):
         return f"User {self.authorid}: {self.text}"
@@ -33,5 +33,5 @@ class journalentry(models.Model):
     rating = models.CharField()
 
     def __str__(self):
-        return f"Journal entry {self.authorid}: {self.event}"
+        return f"Journal entry by {self.authorid}: {self.event}"
     

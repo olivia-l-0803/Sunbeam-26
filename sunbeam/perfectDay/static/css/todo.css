@@ -56,7 +56,6 @@ h3 {
 p {
     color: var(--Blue-Text-Color);
     font-family: "Comfortaa", sans-serif;
-    font-weight: 500;
     font-optical-sizing: auto;
     font-weight: 1000;
     font-size: 20px;
@@ -136,6 +135,7 @@ p {
     position: relative;
     width: 550px;
     height: 40px;
+
     background: var(--Light-Blue-Color);
     border-radius: 20px;
     padding: 5%;
@@ -143,10 +143,24 @@ p {
     margin-top: 2%;
 
     align-items: center;
-    justify-items: center;
+    /* justify-items: center; */
+    justify-content: space-between;
 
     display: flex;
     flex-direction: row;
+}
+
+.DueDate {
+    color: #676e88;
+    font-size: 15px;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 1000;
+
+    justify-items: right;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .doneToggle {

@@ -55,8 +55,7 @@ def forum(request, userID):
     return HttpResponse(template.render(request=request, context= data))
 
 def todo(request, userID):
-    Todotasks= todotask.objects.filter(authorid = userID, done = False)
-    done= todotask.objects.filter(authorid = userID, done = True)
+
     if request.method == "POST":
         if "taskMarked" in request.POST :
             taskID = request.POST.get("taskMarked")
@@ -73,7 +72,12 @@ def todo(request, userID):
             date = request.POST.get('dateInput')
             new = todotask(authorid=userID, text= text, due=date)
             new.save()
-        
+            
+    Todotasks= todotask.objects.filter(authorid = userID, done = False).values()
+    Todotasks = sorted( Todotasks, key= lambda task: task['due'], reverse=False)
+
+    done= todotask.objects.filter(authorid = userID, done = True).values()
+    done = sorted(done, key= lambda task: task['due'])
     data = {"ID": userID,
             "tasks": Todotasks,
              "done": done }
