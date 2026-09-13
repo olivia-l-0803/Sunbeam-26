@@ -5,7 +5,27 @@ from django.http import HttpResponse, JsonResponse
 from .models import * 
 from datetime import datetime
 
+def signup(request):
+    users= user.objects.all().values()
 
+    if request.method == 'POST':
+        inputUser = request.POST.get("usernamefield")
+        inputPass = request.POST.get("passwordfield")
+        
+        check = user.objects.filter(username = inputUser).exists()
+        if check == True:
+            messages.error(request= request, message="This user already exists.")
+        else:
+        #new user
+            try: 
+                new = user(username = inputUser, password = inputPass)
+                new.save()
+            except:
+                messages.error(request= request, message="An error occurred, try again!")
+
+    Qcontext = {'users': users}
+    template = loader.get_template('signup.html')
+    return HttpResponse(template.render(request=request, context= Qcontext))
 
 def login(request):
     users= user.objects.all().values()

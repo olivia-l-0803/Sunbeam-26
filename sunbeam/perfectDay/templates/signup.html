@@ -23,7 +23,7 @@
         <!-- Login -->
         <div class="login-card">
                 
-            <h1 class="login-heading">Login</h1>
+            <h1 class="login-heading">Sign In</h1>
             <!--WARNING WARNING WARNING-->
             {% if messages %}
                 <div class="error-container" style = "color: red; background-color: #ffcccc; padding: 15px; padding-bottom: 0; padding-top: 0; margin-bottom: 15px; border-radius: 4px;">
@@ -37,12 +37,12 @@
             <form id = "formLog" method="POST">
                 {% csrf_token %}
                 <div class="input-group">
-                    <label>Username</label>
+                    <label>New Username</label>
                     <input type="text" class="text-input" name = "usernamefield" required> <!-- EMAIL FIELD EMAIL FIELD EMAIL-->
                 </div>
                 <!-- password  -->
                 <div class="input-group">
-                    <label>Password</label>
+                    <label>Create a Password</label>
                     <div class="password-wrapper">
                         <input type="password" id="password-input" class="text-input" name = "passwordfield" required>
                         
@@ -52,12 +52,12 @@
                 <!-- nter  button -->
                 <button type="submit" class="secondary-button" id = "EnterClass">
                     <div class="btn-border"></div>
-                    <span class="btn-text">Log In</span>
+                    <span class="btn-text">Create Account</span>
                 </button>
 
             </form>
 
-            <a href="{% url 'signUp' %}" class = "link"> Sign Up </a>
+            <a href="{% url 'Login' %}" class = "link"> Log In </a>
         
         </div>
 
