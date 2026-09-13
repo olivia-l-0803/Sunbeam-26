@@ -96,6 +96,7 @@ def todo(request, userID):
         if "delBtn" in request.POST:
             for i in todotask.objects.filter(authorid = userID, done = True):
                 i.delete()
+            messages.success(request=request , message= "Cleared completed tasks.")
             
             
     Todotasks= todotask.objects.filter(authorid = userID, done = False).values()

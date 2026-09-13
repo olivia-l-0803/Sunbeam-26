@@ -42,7 +42,7 @@
   </div>
   <h3 style="margin-left: 16%; margin-top: 30px;">You've completed so much today!</h3>
   {% if messages %}
-    <div class="error-container" id = "error-container" style = "color: red; background-color: #ffcccc; padding: 15px; padding-bottom: 0; padding-top: 0; margin-bottom: 15px; border-radius: 4px; display: flex; flex-direction: row;">
+    <div class="error-container" id = "error-container" style = "color: rgb(49, 112, 65); background-color: #bbffd6; padding: 15px; padding-bottom: 3px; padding-top: 3px; margin: 15px; margin-left: auto; margin-right: auto; border-radius: 4px; display: flex; flex-direction: row; gap: 40px; width: 350px">
         {% for message in messages %}
             <p>{{ message }}</p> 
             <button type= "button" id="del" style="color: red; background-color: transparent; border: 0; cursor: pointer;">&#10006;</button> 
