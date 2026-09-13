@@ -20,6 +20,7 @@ def signup(request):
             try: 
                 new = user(username = inputUser, password = inputPass)
                 new.save()
+                return redirect('Login')
             except:
                 messages.error(request= request, message="An error occurred, try again!")
 
@@ -92,6 +93,10 @@ def todo(request, userID):
             date = request.POST.get('dateInput')
             new = todotask(authorid=userID, text= text, due=date)
             new.save()
+        if "delBtn" in request.POST:
+            for i in todotask.objects.filter(authorid = userID, done = True):
+                i.delete()
+            
             
     Todotasks= todotask.objects.filter(authorid = userID, done = False).values()
     Todotasks = sorted( Todotasks, key= lambda task: task['due'], reverse=False)

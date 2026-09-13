@@ -41,6 +41,15 @@
     {% endfor %}
   </div>
   <h3 style="margin-left: 16%; margin-top: 30px;">You've completed so much today!</h3>
+  {% if messages %}
+    <div class="error-container" id = "error-container" style = "color: red; background-color: #ffcccc; padding: 15px; padding-bottom: 0; padding-top: 0; margin-bottom: 15px; border-radius: 4px; display: flex; flex-direction: row;">
+        {% for message in messages %}
+            <p>{{ message }}</p> 
+            <button type= "button" id="del" style="color: red; background-color: transparent; border: 0; cursor: pointer;">&#10006;</button> 
+        {% endfor %}
+    </div>
+  {% endif %}
+
   <div class="main-container" id= "todo-container">
     {% for task in done %}
       {% if task.done %}
@@ -56,6 +65,9 @@
       <p>Nothing here yet!</p>
     {% endfor %}
   </div>
+
+  <form method="POST">{% csrf_token %} <button class= delBtn id = delBtn name = delBtn>Delete</button></form>
+  
  
   <div class="addModal">
     <div class="modalContent">
@@ -81,5 +93,6 @@
   </div>
 
   <script src="{% static 'js/todo.js' %}" defer></script>
+  <script src="{% static 'js/deleteBtn.js' %}"></script>
 
 </body>

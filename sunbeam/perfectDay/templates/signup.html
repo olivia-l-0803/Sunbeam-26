@@ -29,7 +29,7 @@
                 <div class="error-container" id = "error-container" style = "color: red; background-color: #ffcccc; padding: 15px; padding-bottom: 0; padding-top: 0; margin-bottom: 15px; border-radius: 4px; display: flex; flex-direction: row;">
                     {% for message in messages %}
                         <p>{{ message }}</p> 
-                        <button type= "button" id="del" style="color: red; background-color: transparent; border: 0;">&#10006;</button> 
+                        <button type= "button" id="del" style="color: red; background-color: transparent; border: 0; cursor: pointer;">&#10006;</button> 
                     {% endfor %}
                 </div>
             {% endif %}
