@@ -26,9 +26,10 @@
             <h1 class="login-heading">Login</h1>
             <!--WARNING WARNING WARNING-->
             {% if messages %}
-                <div class="error-container" style = "color: red; background-color: #ffcccc; padding: 15px; padding-bottom: 0; padding-top: 0; margin-bottom: 15px; border-radius: 4px;">
+                <div class="error-container" id = "error-container" style = "color: red; background-color: #ffcccc; padding: 15px; padding-bottom: 0; padding-top: 0; margin-bottom: 15px; border-radius: 4px; display: flex; flex-direction: row;">
                     {% for message in messages %}
-                        <p>{{ message }}</p>
+                        <p>{{ message }}</p> 
+                        <button type= "button" id="del" style="color: red; background-color: transparent; border: 0;">&#10006;</button> 
                     {% endfor %}
                 </div>
             {% endif %}
@@ -62,4 +63,5 @@
         </div>
 
     </div>
+    <script src="{% static 'js/deleteBtn.js' %}" defer></script>
 </body>
